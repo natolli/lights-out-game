@@ -6,7 +6,7 @@ const HomePage = ({ history }) => {
   return (
     <HomeContaier>
       <HomeTitle>Lights Out</HomeTitle>
-      <CustomButton>Start</CustomButton>
+      <CustomButton onClick={() => history.push("/game")}>Start</CustomButton>
       <CustomButton onClick={() => history.push("/instruction")}>
         How To Play
       </CustomButton>
